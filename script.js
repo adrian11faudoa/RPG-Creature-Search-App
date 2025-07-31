@@ -22,7 +22,6 @@ const getCreature = async () => {
     );
     const data = await response.json();
 
-    // Set Creature info
     creatureName.textContent = `${data.name.toUpperCase()}`;
     creatureID.textContent = `#${data.id}`;
     weight.textContent = `Weight: ${data.weight}`;
@@ -30,7 +29,6 @@ const getCreature = async () => {
     specialName.textContent = data.special.name;
     specialDescription.textContent = data.special.description;
 
-    // Set stats
     hp.textContent = data.stats[0].base_stat;
     attack.textContent = data.stats[1].base_stat;
     defense.textContent = data.stats[2].base_stat;
@@ -38,7 +36,6 @@ const getCreature = async () => {
     specialDefense.textContent = data.stats[4].base_stat;
     speed.textContent = data.stats[5].base_stat;
 
-    // Set types
     types.innerHTML = data.types
       .map(obj => `<span class="type ${obj.name}">${obj.name}</span>`)
       .join('');
@@ -50,7 +47,6 @@ const getCreature = async () => {
 };
 
 const resetDisplay = () => {
-  // reset stats
   creatureName.textContent = '';
   creatureID.textContent = '';
   height.textContent = '';
