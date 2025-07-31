@@ -87,7 +87,7 @@ label {
   width: 80px;
   border-radius: 20px;
   text-align: center;
-  background-color: #7f21ab;
+  background-color: #d31414;
   color: #f5f6f7;
   border: none;
 }
@@ -161,7 +161,7 @@ table {
   width: 100%;
   font-size: 1 rem;
   color: #f5f6f7;
-  background-color: #7f21ab;
+  background-color: #d31414;
 }
 
 th:nth-child(even),
